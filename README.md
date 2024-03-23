@@ -1,17 +1,27 @@
-# Template Monorepo
+# Custom Favicon Recipes
 
-This is a template repo in GitHub for creating a fresh monorepo for managing code and documentation.
+This repo is meant to outline a few neat Favicon recipes that you can use on your own projects to improve the experience for your users and yourself too!
 
-For more details on this setup, refer to my blog post here: https://matthamlin.me/2024/february/library-docs-monorepo-template
+## Recipes:
 
-## Getting Started:
+- Customizing favicons based on `NODE_ENV`
+- Light and Dark mode favicons
 
-- Use this template (see `Use this Template` button near the top right corner of the page)
-- Clone the newly created repo
-- Run `bun install` (if you don't have bun installed locally, refer to their [docs](https://bun.sh))
-- Start writing some code!
+### Custom Dev/Prod Favicons
 
-## Tasks:
+You can swap the favicon that you use based on the `NODE_ENV`, allowing you to easily distinguish between a development version of your site and a production version of your site.
+
+Check out the [`./apps/environment-favicons`](./apps/environment-favicons) for details!
+
+### Light and Dark Mode Favicons
+
+You can swap the favicon that you use based on a `media` attribute on the favicon `<link />` element to serve different favicons based on the desired theme by the user.
+
+Check out the [`./apps/light-dark-favicons`](./apps/light-dark-favicon) for details!
+
+## Development:
+
+### Tasks:
 
 Since this is a `turborepo` monorepo, you can run some tasks across the repo with ease by using the configured "tasks" from the root `package.json` and `turbo.json` files. Currently the below tasks are supported:
 
@@ -20,7 +30,7 @@ Since this is a `turborepo` monorepo, you can run some tasks across the repo wit
 - `lint`
 - `format`
 
-## Tools:
+### Tools:
 
 - [Bun](https://bun.sh)
 - [Turborepo](https://turbo.dev/repo/docs)
@@ -29,8 +39,3 @@ Since this is a `turborepo` monorepo, you can run some tasks across the repo wit
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [dprint](https://www.typescriptlang.org/docs/)
 - [oxlint](https://oxc-project.github.io/docs/guide/usage/linter.html)
-
-## Future Enhancements:
-
-- Add an E2E example setup
-- Add publish config to a package
