@@ -57,7 +57,7 @@ export const metadata: Metadata = {
 
 ([source](https://github.com/hamlim/custom-favicons-recipes/blob/3787b239929d696548c3933bc64e2711543383f1/apps/light-dark-favicons/app/layout.tsx#L7-L22))
 
-Check out the [`./apps/light-dark-favicons` app](./apps/light-dark-favicon) to see this in practice!
+Check out the [`./apps/light-dark-favicons` app](./apps/light-dark-favicons) to see this in practice!
 
 ## Development:
 
